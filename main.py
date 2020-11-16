@@ -34,10 +34,10 @@ if __name__ == '__main__':
 
     status = send_sms(number, message)
 
-    if dict.get('return') is False:
+    if status.get('return') is False:
         print("Sorry, Otp could not be sent ! ")
         
-        print(f'Message : {dict.get("message")}')
+        print(f'Message : {status.get("message")}')
     
     else:
         print("Otp sent successfully")
